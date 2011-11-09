@@ -17,6 +17,7 @@ RSpec.configure do |config|
   config.color_enabled = true
   config.before(:all) do
     Chargify.configure do |c|
+      c.subdomain = remote_configuration['subdomain']
       c.api_key = remote_configuration['api_key']
       c.site = remote_configuration['site']
     end
