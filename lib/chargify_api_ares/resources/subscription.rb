@@ -98,6 +98,10 @@ module Chargify
       end
     end
 
+    class CreditCard < Base
+        self.prefix = "/subscriptions/:subscription_id/"
+    end
+
     class Statement < Base
       self.prefix = "/subscriptions/:subscription_id/"
     end
