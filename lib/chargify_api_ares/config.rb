@@ -1,6 +1,6 @@
 module Chargify
   class << self
-    attr_accessor :subdomain, :api_key, :site, :format, :timeout
+    attr_accessor :subdomain, :api_key, :site, :format, :timeout, :share_key
 
     def configure
       yield self
